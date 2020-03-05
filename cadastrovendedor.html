@@ -81,104 +81,116 @@
     </header>
 
     <div class="container">
-        <form action="./formulariovendedorparte2.html" method="post">
-
-            <div class="col">
-
-                <!--nome e Sobrenome-->
-
-                <h1>Faça seu cadastro</h1>
-                <div class="form-row">
-                    <div class="col-md-6">
-                        <label for="Nome">Nome</label>
-                        <input name="nome" type="text" class="form-control" placeholder="Nome" required>
-                    </div>
-
-                    <div class="col-md-6">
-                        <label for="Sobrenome">Sobrenome</label>
-                        <input name="sobrenome" type="text" class="form-control" placeholder="Sobrenome" required>
-                    </div>
-                </div>
-
-                <!-- inserindo telefone-->
-
-                <div class="form-row">
-                    <div class="form-group col-md-6">
-                        <label for="inputFone">Telefone comercial</label>
-                        <input name="telefone1" type="text" class="form-control" id="inputFone" placeholder="Telefone"
-                            pattern="\([0-9]{2}\)[0-9]{4,6}-[0-9]{3,4}$">
-                    </div>
-                    <div class="form-group col-md-6">
-                        <label for="inputFone" class="control-label">Telefone celular </label>
-                        <input name="telefone2" type="text" class="form-control" id="inputFone" placeholder="Telefone"
-                            pattern="\([0-9]{2}\)[0-9]{4,6}-[0-9]{3,4}$">
-                    </div>
-                </div>
-
-                <!--inserindo email-->
-
-                <div class="form-row">
-                    <div class="form-group col-md-6">
-                        <label for="inputEmail4">Email</label>
-                        <input name="email" type="email" class="form-control" id="inputEmail4" placeholder="Email">
-                    </div>
-
-
-                    <!--inserindo senha-->
-
-
-                    <div class="form-group col-md-6">
-                        <label for="inputPassword4">Senha</label>
-                        <input name="senha" type="password" class="form-control" id="inputPassword4"
-                            placeholder="Senha">
-                    </div>
-                </div>
-
-
-                <!--inserindo endereco  com CEP - principal -->
-                <div class="form-row">
-                    <div class="form-group col-md-6">
-                        <label for="inputCEP">CEP</label>
-                        <input name="cep1" type="text" class="form-control" id="inputCEP">
-                    </div>
-
-                    <div class="form-group col-md-6">
-                        <label for="inputBairro">Bairro</label>
-                        <input type="text" class="form-control" placeholder="Bairro">
-                    </div>
-                </div>
-
-                <div class="form-group col">
-                    <label for="inputAddress">Endereço da sua horta</label>
-                    <input name="endereco1" type="text" class="form-control" id="inputAddress"
-                        placeholder="Digite seu endereço" required>
-                </div>
-
-
-                <!--Inserir complemento - numero e apartamento bairro-->
-                <div class="form-row">
-
-                    <div class="form-group col-md-4">
-                        <label for="inputNum">Número</label>
-                        <input name="numero" type="text" class="form-control" placeholder="Número">
-                    </div>
-
-                    <div class="form-group col-md-8">
-                        <label for="inputComplemento">Complemento</label>
-                        <input name="complemento" type="text" class="form-control" placeholder="Complemento">
-                    </div>
-
-
-                    <a href="formulariovendedorhmtl.html">
-
-                        <button name="enviar" type="submit" class="btn btn-primary">Entrar</button>
-
-                        <button name="continuar" type="submit" class="btn btn-primary">Continue</button>
-                    </a>
-
+        <div class="form text-muted">
+            <div class="form-row mt-3 ">
+                <div class="col mb-3 text-center">
+                    <h1>Faça seu cadastro</h1>
                 </div>
             </div>
-        </form>
+
+
+            <div class="form-row mt-3 ">
+                <div class="form-group col-md-4 offset-md-2">
+                    <label for="inputEmail4">Email</label>
+                    <input name="email" type="email" class="form-control text-muted  " id="inputEmail4">
+                </div>
+
+
+
+
+
+                <div class="form-group col-md-4">
+                    <label for="inputPassword4">Senha</label>
+                    <input name="senha" type="password" class="form-control" id="inputPassword4">
+                </div>
+            </div>
+
+
+            <div class="form-row">
+                <div class="col-md-4 offset-md-2">
+                    <label for="Nome">Nome</label>
+                    <input name="nome" type="text" class="form-control" required>
+                </div>
+
+                <div class="col-md-4">
+                    <label for="Sobrenome">Sobrenome</label>
+                    <input name="sobrenome" type="text" class="form-control" required>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-4 offset-md-2  mt-3">
+                    <label for="inputCEP">CPF</label>
+                    <input name="cep1" type="text" class="form-control" id="inputCEP">
+                </div>
+
+                <div class="form-group col-md-4  mt-3">
+                    <label for="inputNum">CNPJ</label>
+                    <input name="numero" type="text" class="form-control">
+                </div>
+
+            </div>
+
+
+            <div class="form-row ">
+                <div class="form-group col-md-4 offset-md-2">
+                    <label for="inputFone">Telefone Comercial</label>
+                    <input name="telefone1" type="text" class="form-control" id="inputFone"
+                        pattern="\([0-9]{2}\)[0-9]{4,6}-[0-9]{3,4}$">
+                </div>
+                <div class="form-group col-md-4">
+                    <label for="inputFone" class="control-label"> WhatsApp</label>
+                    <input name="telefone2" type="text" class="form-control" id="inputFone"
+                        pattern="\([0-9]{2}\)[0-9]{4,6}-[0-9]{3,4}$">
+                </div>
+            </div>
+
+
+
+
+            <div class="form-row">
+                <div class="form-group col-md-4 offset-md-2">
+                    <label for="inputCEP">CEP</label>
+                    <input name="cep1" type="text" class="form-control" id="inputCEP">
+                </div>
+
+                <div class="form-group col-md-4">
+                    <label for="inputNum">Número</label>
+                    <input name="numero" type="text" class="form-control">
+                </div>
+
+            </div>
+
+
+            <div class="form-row">
+                <div class="form-group col-md-4 offset-md-2">
+                    <label for="inputAddress">Endereço</label>
+                    <input name="endereco1" type="text" class="form-control" id="inputAddress" required>
+                </div>
+
+                <div class="form-group col-md-4">
+                    <label for="inputBairro">Bairro</label>
+                    <input type="text" class="form-control">
+                </div>
+
+
+            </div>
+
+
+            <div class="form-row">
+                <div class="form-group col-md-4 offset-md-2">
+                    <label for="inputCity">Cidade</label>
+                    <input name="cidade" type="text" class="form-control" id="inputCity">
+                </div>
+                <div class="form-group col-md-4">
+                    <label for="inputComplemento">Complemento</label>
+                    <input name="complemento" type="text" class="form-control">
+                </div>
+            </div>
+            <div class="row d-flex justify-content-center">
+                <a href="cadastrovendedor2.html" class=" btn btn-outline-success mt-3 mb-5">Continuar</a>
+            </div>
+
+               
     </div>
 
 
@@ -188,11 +200,11 @@
             <div class="col-sm-4 ">
                 <h3>Contatos:</h3>
 
-                <a href="#" class="nav-link text-dark item-action"> <i class="fas fa-map-marker-alt"></i>Rua do
+                <a href="#" class="nav-link text-dark item-action"> <i class="fas fa-map-marker-alt mr-3"></i>Rua do
                     Comércio, Grajaú- SP</a>
-                <a href="#" class="nav-link text-dark item-action"><i class="fas fa-mobile-alt"></i>(011)0000-0000</a>
-                <a href="#" class="nav-link text-dark item-action"><i
-                        class="far fa-envelope"></i>Naturalraiz@hotmail.com</a>
+                <a href="#" class="nav-link text-dark item-action"><i class="fas fa-mobile-alt mr-3"></i>(011)0000-0000</a>
+                <a href="#" class="nav-link text-dark item-action mr-3"><i
+                        class="far fa-envelope mr-3"></i>Naturalraiz@hotmail.com</a>
 
             </div>
 
